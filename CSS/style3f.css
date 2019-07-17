@@ -1,0 +1,441 @@
+/*Подключение шрифтов*/
+@font-face {
+	src: url("../Fonts/OpenSans-Regular.ttf");
+	font-family: "OpenSans Regular";
+}
+
+@font-face {
+	src: url("../Fonts/OpenSans-Bold.ttf");
+	font-family: "OpenSans Bold";
+}
+
+@font-face {
+	src: url("../Fonts/OpenSans-ExtraBold.ttf");
+	font-family: "OpenSans ExtraBold";
+}
+
+/*Все ссылки*/
+a {
+	text-decoration:none;
+	color: rgb(246, 242, 242);
+}
+
+/*Параметры для всей страницы*/
+body {
+	margin: 0;
+  	padding: 0;
+	font-family: "OpenSans Regular", "Helvetica", "Arial", sans-serif;
+	font-style: normal;
+  	font-weight: 400;
+  	/*color: rgb(246, 242, 242);*/
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+
+/*Всё полезное содержимое сайта до footer'a находится здесь*/
+.wrapper {
+	/*min-height: calc(100vh - 89px);*/
+	/*Растягиваем содержимое на всю видимую область браузера 
+	за исключением высоты footer'a. Это сделано, что бы футер всегда 
+	оствался внизу.*/
+}
+
+/*Фон-основа для шапки и первого текста с картинкой (intro1 и intro2)*/
+.intro-color{
+	background-color: rgb(246, 242, 242);
+}
+
+/*Фон-основа странички верхняя с шапкой меню*/
+.intro1 {
+	display: flex;
+	align-items: center;
+	max-width: 1582px;
+	height: 120px;
+	flex-wrap: wrap;
+	/*background-color: rgb(246, 242, 242);*/
+}
+
+/*Фон-основа странички нижняя с текстом и картинкой*/
+.intro2 {
+	display: flex;
+	max-width: 1582px;
+	max-height: 691px;
+	flex-wrap: wrap; /*Разрешаем переносить элементы на другую строку*/
+	/*background-color: rgb(246, 242, 242);*/
+}
+
+/*Прямоугольник шапки-меню*/
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1249px;
+	min-width: 1000px;
+	height: 89px;
+	margin-top: 25px;
+	background-color: rgb(49, 48, 48);
+}
+
+/*Элементы меню*/
+.menu-items {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "OpenSans Bold", "Helvetica", "Arial", sans-serif;
+	font-style: normal;
+  	font-weight: 700;
+  	font-size: 13.5px;
+	text-transform: uppercase;
+}
+
+/*Ссылки в меню*/
+.menu-items>a {
+	margin: 0 30px 0 0;
+	padding: 38px 20px 33px;
+}
+
+/*При наведении курсора на ссылки в шапке-меню*/
+.menu-items>a:hover {
+	background-color: rgb(255, 45, 45);
+}
+
+/*Область с текстом и кнопкой*/
+.content {
+	/*width: 90%;*/
+	max-width: 658px;
+}
+
+/*Заголовок h1*/
+.headline {
+	text-transform: uppercase;
+	font-size: 60px;
+	letter-spacing: 1.1pt;
+	line-height: 120%;
+   	font-family: "OpenSans ExtraBold", "Helvetica", "Arial", sans-serif;
+   	font-style: normal;
+  	font-weight: 800;
+  	color: rgb(49, 48, 48);
+  	margin-bottom: 20px;
+  	margin-top: 80px;
+}
+
+/*Абзац текста*/
+.paragraph {
+	line-height: 175%;
+	color: rgb(49, 48, 48);
+	width: 80%;
+  	margin-bottom: 53px;
+  	margin-left: 5px;
+}
+
+/*Кнопка-ссылка на контакты*/
+.intro-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 225px;
+	height: 55px;
+	border-radius: 5px;
+    background-color: rgb(255, 45, 45);
+    font-family: "Open Sans Bold", "Helvetica", "Arial", sans-serif;
+   	font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.6pt;
+    margin-left: 5px;
+}
+
+/*При наведении курсора на кнопку*/
+.intro-button:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+/*Картинка*/
+.image {
+	display: flex;
+	margin-top: 94px;
+	margin-left: 40px;
+	width: 552px;
+	height: 357px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/*При наведении курсора на картинку*/
+.image:hover {
+	box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+/*Фон-основа области с текстом "do you know we can provide for you?"*/
+.servises {
+	display: flex;
+	background-color: rgb(990, 230, 242);
+	min-height: 691px;
+	max-width: 1582px;
+	flex-wrap: wrap; /*Разрешаем переносить элементы на другую строку*/
+}
+
+/*Правая область с содержимым servises*/
+.content2 {
+	max-width: 600px;
+}
+
+/*Заголовок в области "do you know..."*/
+.headline2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	letter-spacing: 1.1pt;
+	line-height: 120%;
+   	font-family: "OpenSans Bold", "Helvetica", "Arial", sans-serif;
+   	font-style: normal;
+  	font-weight: 700;
+  	color: rgb(49, 48, 48);
+  	margin-bottom: 20px;
+  	margin-top: 80px;
+}
+
+/*Абзац текста в области "do you know..."*/
+.paragraph2 {
+	line-height: 175%;
+	color: rgb(49, 48, 48);
+	width: 80%;
+  	margin-bottom: 53px;
+  	margin-left: 5px;
+}
+
+/*Кнопка в области "do you know..."*/
+.button2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 225px;
+	height: 55px;
+	border-radius: 5px;
+    border: 2px solid rgb(255, 45, 45);
+    font-family: "Open Sans Bold", "Helvetica", "Arial", sans-serif;
+   	font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.6pt;
+    color: rgb(255, 45, 45);
+    margin-left: 5px;
+}
+
+/*При наведении курсора на кнопку*/
+.button2:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+/*Левая область с содержимым servises*/
+.content3 {
+	max-width: 950px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+/*Иконка с текстом - услуги сайта в servises*/
+.offers1 {
+	color: rgb(49, 48, 48);
+	width: 301px;
+	height: 210px;
+	margin: 20px 20px;
+}
+
+footer {
+	justify-content: center;
+    display: flex;
+	align-items: center;
+}
+
+/*Прямоугольник footer'a*/
+.footer-wrapper {
+	/*min-width: 1582px;*/
+	width: 100vw;
+	height: 89px;
+	background-color: rgb(49, 48, 48);
+}
+
+/*Содержимое footer'a*/
+.footer-items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 25px 300px;
+}
+
+/*Текст в footer'e*/
+.footer-text {
+	font-family: "Open Sans Regular", "Helvetica", "Arial", sans-serif;
+   	font-style: normal;
+    font-weight: 400;
+    /*font-size: 30px;*/
+    color: grey;
+}
+
+/*Иконки-ссылки в footer'e*/
+.footer-icons {
+	filter: invert(90%);
+}
+
+/*При наведении курсора на Иконки-ссылки в footer'e*/
+.footer-icons>a:hover {
+	filter: invert(50%);
+}
+
+/*При уменьшении дисплея менее, чем 1250px*/
+@media screen and (max-width: 1250px) {
+
+
+	/*Меняем параметры Wrapper*/
+	.wrapper {
+		min-height: unset;
+		/*min-width: 350px;*/
+		max-width: 100vw;
+	}
+
+	/*Меняем параметры intro1*/
+	.intro1 {
+		max-width: 100vw;
+		min-width: 350px;
+		height: auto;
+	}
+
+	/*Меняем параметры intro2*/
+	.intro2 {
+		max-width: 100vw;
+		min-width: 350px;
+		max-height: unset;
+		margin: 0 20px 0 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/*justify-content: center;*/
+	}
+
+	/*Меняем параметры Menu (прямоугольника хеадера)*/
+	.menu {
+		width: 100vw;
+		min-width: 350px;
+		height: auto;
+		margin-top: 8px;
+		display: flex;
+	}
+
+	/*Меняем параметры .Menu-items (списка в хеадере)*/
+	.menu-items {
+		margin: 0;
+		padding: 0;
+	}
+
+	/*Меняем .Content (область с тектом и кнопкой)*/
+	.content{
+		max-width: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/*justify-content: center;*/
+	}
+
+	/*меняем текст .headline*/
+	.headline {
+		font-size: 37px;
+		letter-spacing: 1pt;
+		line-height: 100%;
+	  	margin-bottom: 10px;
+	  	margin-top: 20px;
+	  	text-align: center;
+	}
+
+	/*Меняем .paragraf (абзац текста)*/
+	.paragraph {
+		line-height: 100%;
+		width: 100%;
+	  	margin-bottom: 10px;
+	  	margin-left: 0;
+	  	text-align: justify;
+	}
+
+	/*Меняем кнопку .batton*/
+	.button {
+		margin: 10px 0;
+	}
+
+	/*Меняем картинку .image*/
+	.image {
+		margin: 20px auto;
+		width: 70%;
+		height: auto;
+	}
+
+	/*Меняем Прямоугольник footer'a*/
+	.footer-wrapper {
+		width: 100vw;
+		min-height: 89px;
+		height: auto;
+	}
+
+	/*Меняем Содержимое footer'a*/
+	.footer-items {
+		margin: 20px 30px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
+/*Если ширина экрана становится меньше, чем ширина картинки*/
+@media screen and (max-width: 552px) {
+	.wrapper {
+		min-width: 350px;
+		width: 100vw;
+	}
+
+	.image {
+		margin: 15px auto;
+		box-shadow: 0 0 15px rgba(0,0,0,0.5);
+		width: 350px;
+		height: auto;
+	}
+
+	.image:hover {
+		box-shadow: 0 0 20px rgba(0,0,0,0.6);
+	}
+
+	/*Выравниваем элементы по центру*/
+	.intro2 {
+		margin: 0 auto;
+	}
+
+	/*Сверху/снизу поля 10px, по горизонтали выравниваем по центру*/
+	.paragraph {
+		margin: 10px auto;
+	}
+
+	.button:hover {
+		box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	}
+
+	/*Выравниваем кнопку по центру.*/
+	.button {
+		margin: 0 auto;
+	}
+
+	/*Текст в футере выравниваем по центру.*/
+	.footer-items {
+		text-align: center;
+	}
+
+	/*Выравниваем элементы в шапке меню.*/
+	.menu-items {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/*Меняем Ссылки в меню*/
+	.menu-items>a {
+		margin: 0 5px 0 5px;
+		padding: 38px 10px 33px;
+	}
+
+}
